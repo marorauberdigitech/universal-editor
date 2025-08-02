@@ -254,13 +254,13 @@
           }
         ]
       },
-    {
-      "component": "image",
-      "name": "image",
-      "label": "Author Image",
-      "value": "",
-      "valueType": "string"
-    }
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
     ]
   },
    {
