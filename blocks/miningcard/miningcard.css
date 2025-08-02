@@ -1,0 +1,29 @@
+.miningcard {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.miningcard-image {
+  max-width: 400px;
+  height: auto;
+}
+
+.miningcard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.miningcard-desc {
+  color: #333;
+  line-height: 1.6;
+}
+
+.miningcard-cta a {
+  color: #0072c6;
+  font-weight: bold;
+  text-decoration: none;
+}

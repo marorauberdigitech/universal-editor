@@ -298,37 +298,80 @@
     }
   }
 },
-{
-  "id": "mining-hero",
+  {
+    "title": "Mining Hero",
+    "id": "mining-hero",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/section/v1/section",
+          "template": {
+            "name": "Mining Hero",
+            "model": "mining-hero",
+            "filter": "section"
+          }
+        }
+      }
+    }
+  },
+  {
+  "id": "miningcard",
   "fields": [
     {
-      "name": "title",
-      "type": "text",
-      "label": "Title",
-      "required": true
+      "component": "text",
+      "name": "heading",
+      "label": "Heading",
+      "value": "",
+      "valueType": "string"
     },
     {
+      "component": "textarea",
       "name": "description",
-      "type": "textarea",
-      "label": "Description"
+      "label": "Description",
+      "value": "",
+      "valueType": "string"
     },
     {
-      "name": "image",
-      "type": "image",
-      "label": "Image",
-      "required": true
-    },
-    {
+      "component": "text",
       "name": "ctaText",
-      "type": "text",
-      "label": "CTA Text"
+      "label": "CTA Text",
+      "value": "",
+      "valueType": "string"
     },
     {
-      "name": "ctaLink",
-      "type": "url",
-      "label": "CTA Link"
+      "component": "text",
+      "name": "ctaUrl",
+      "label": "CTA URL",
+      "value": "",
+      "valueType": "string"
+    },
+    {
+      "component": "image",
+      "name": "image",
+      "label": "Image",
+      "value": "",
+      "valueType": "image"
+    },
+    {
+      "component": "select",
+      "name": "alignment",
+      "label": "Image Alignment",
+      "description": "Position of the image",
+      "value": "left",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Left",
+          "value": "left"
+        },
+        {
+          "name": "Right",
+          "value": "right"
+        }
+      ]
     }
   ]
 }
+
 
 ]
