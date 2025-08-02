@@ -298,22 +298,7 @@
     }
   }
 },
-  {
-    "title": "Mining Hero",
-    "id": "mining-hero",
-    "plugins": {
-      "xwalk": {
-        "page": {
-          "resourceType": "core/franklin/components/section/v1/section",
-          "template": {
-            "name": "Mining Hero",
-            "model": "mining-hero",
-            "filter": "section"
-          }
-        }
-      }
-    }
-  },
+  
   {
   "id": "miningcard",
   "fields": [
@@ -369,7 +354,26 @@
           "value": "right"
         }
       ]
-    }
+    },
+     {
+    "id": "carouselCard",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carouselCardImage",
+        "label": "Carousel Card Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "carouselCardText",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  }
   ]
 }
 
