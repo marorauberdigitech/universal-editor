@@ -16,8 +16,7 @@
       "cards",
       "columns",
       "fragment",
-      "mining-hero",
-      "miningcard"
+      "carouselCard"
     ]
   },
   {
@@ -42,6 +41,12 @@
     ]
   },
   {
+    "id": "carouselCard",
+    "components": [
+      "carouselCard"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",
@@ -53,8 +58,6 @@
       "columns",
       "quote",
       "tab",
-      "mining-hero",
-      "miningcard",
       "carouselCard"
     ]
   } 
