@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "carouselCard"
+      "carouselCard",
+      "imageText"
     ]
   },
   {
@@ -58,7 +59,8 @@
       "columns",
       "quote",
       "tab",
-      "carouselCard"
+      "carouselCard",
+      "imageText"
     ]
   } 
   
