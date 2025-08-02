@@ -181,7 +181,17 @@
   "image": "/content/dam/image.png",
   "imageAlt": "Helix - a shape like a corkscrew",
   "text": "<h1>Welcome to AEM</h1>"
+},
+{
+  "component": {
+    "name": "mining-hero",
+    "label": "Mining hero",
+    "description": "A promotional banner block with image, text, and CTA.",
+    "icon": "image", 
+    "modelPath": "./component-models.json"
+  }
 }
+
       ]
     }
   ]

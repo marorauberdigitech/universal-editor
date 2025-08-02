@@ -15,7 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "mining-hero"
     ]
   },
   {
@@ -50,7 +51,8 @@
       "cards",
       "columns",
       "quote",
-      "tab"
+      "tab",
+      "mining-hero"
     ]
   } 
 ]

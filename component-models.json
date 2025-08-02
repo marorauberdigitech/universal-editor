@@ -297,5 +297,38 @@
       }
     }
   }
+},
+{
+  "id": "mining-hero",
+  "fields": [
+    {
+      "name": "title",
+      "type": "text",
+      "label": "Title",
+      "required": true
+    },
+    {
+      "name": "description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "image",
+      "type": "image",
+      "label": "Image",
+      "required": true
+    },
+    {
+      "name": "ctaText",
+      "type": "text",
+      "label": "CTA Text"
+    },
+    {
+      "name": "ctaLink",
+      "type": "url",
+      "label": "CTA Link"
+    }
+  ]
 }
+
 ]
