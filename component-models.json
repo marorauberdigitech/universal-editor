@@ -253,7 +253,14 @@
             "value": "bg-blue"
           }
         ]
-      }
+      },
+    {
+      "component": "image",
+      "name": "image",
+      "label": "Author Image",
+      "value": "",
+      "valueType": "string"
+    }
     ]
   },
    {

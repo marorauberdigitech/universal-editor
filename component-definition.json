@@ -168,12 +168,14 @@
                   "name": "Quote",
                   "model": "quote",
                   "quote": "<p>Think, McFly! Think!</p>",
-                  "author": "Biff Tannen"
+                  "author": "Biff Tannen",
+                  "image": "/content/dam"
                 }
               }
             }
           }
         },
+        
            {
           "title": "Carousel Card",
           "id": "carouselCard",
