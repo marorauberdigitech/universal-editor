@@ -1,0 +1,52 @@
+/* Mining Promo Block */
+
+.mining-promo-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.mining-promo-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.mining-promo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.mining-promo-content {
+  flex: 1 1 50%;
+}
+
+.mining-promo-text h2,
+.mining-promo-text h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #00447c;
+}
+
+.mining-promo-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mining-promo-text .button.primary {
+  background-color: #00447c;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.mining-promo-text .button.primary:hover {
+  background-color: #002f59;
+}

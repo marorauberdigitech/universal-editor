@@ -256,106 +256,7 @@
       }
     ]
   },
-  {
-  "id": "hero",
-  "fields": [
-    {
-      "component": "reference",
-      "valueType": "string",
-      "name": "image",
-      "label": "Image",
-      "multi": false
-    },
-    {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "imageAlt",
-      "label": "Alt",
-      "value": ""
-    },
-    {
-      "component": "text-area",
-      "name": "text",
-      "value": "",
-      "label": "Text",
-      "valueType": "string"
-    }
-  ]
-},
-{
-  "title": "Tab",
-  "id": "tab",
-  "plugins": {
-    "xwalk": {
-      "page": {
-        "resourceType": "core/franklin/components/section/v1/section",
-        "template": {
-          "name": "Tab",
-          "model": "tab",
-          "filter": "section"
-        }
-      }
-    }
-  }
-},
-  
-  {
-  "id": "miningcard",
-  "fields": [
-    {
-      "component": "text",
-      "name": "heading",
-      "label": "Heading",
-      "value": "",
-      "valueType": "string"
-    },
-    {
-      "component": "textarea",
-      "name": "description",
-      "label": "Description",
-      "value": "",
-      "valueType": "string"
-    },
-    {
-      "component": "text",
-      "name": "ctaText",
-      "label": "CTA Text",
-      "value": "",
-      "valueType": "string"
-    },
-    {
-      "component": "text",
-      "name": "ctaUrl",
-      "label": "CTA URL",
-      "value": "",
-      "valueType": "string"
-    },
-    {
-      "component": "image",
-      "name": "image",
-      "label": "Image",
-      "value": "",
-      "valueType": "image"
-    },
-    {
-      "component": "select",
-      "name": "alignment",
-      "label": "Image Alignment",
-      "description": "Position of the image",
-      "value": "left",
-      "valueType": "string",
-      "options": [
-        {
-          "name": "Left",
-          "value": "left"
-        },
-        {
-          "name": "Right",
-          "value": "right"
-        }
-      ]
-    },
-     {
+   {
     "id": "carouselCard",
     "fields": [
       {
@@ -374,8 +275,4 @@
       }
     ]
   }
-  ]
-}
-
-
 ]
