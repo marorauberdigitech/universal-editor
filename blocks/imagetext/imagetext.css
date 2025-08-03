@@ -1,0 +1,22 @@
+.image-text-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-text-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-text-content blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
