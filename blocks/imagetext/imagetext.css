@@ -10,9 +10,17 @@
 }
 
 .image-text-content blockquote {
-  font-style: italic;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0;
+      font-size: 16px;
+    line-height: 26px;
+  margin: 14px 0;
+    color: #54545c;
+}
+.image-text-content blockquote a{
+  text-decoration: none;  
+  color: #0071d0;
+}
+.image-text-content blockquote a:hover{
+  text-decoration: none;  
+  color: #0071d0;
 }
 
