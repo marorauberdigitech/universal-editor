@@ -1,20 +1,21 @@
 .image-text-inner {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   gap: 2rem;
-  padding: 2rem;
-  background: #f9f9f9;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .image-text-image img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 .image-text-content blockquote {
-  font-size: 1.2rem;
   font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
   margin: 0;
-  color: #333;
 }

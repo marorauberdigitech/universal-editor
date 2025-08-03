@@ -1,20 +1,13 @@
 export default function decorate(block) {
-  console.log('Decorating imageText block:', block);
+  const [textWrapperOuter, imageWrapperOuter] = block.children;
 
-  const [textWrapper, imageWrapper] = block.children;
-  if (!textWrapper || !imageWrapper) {
-    console.warn('imageText block: Missing expected child elements.');
-    return;
-  }
-
-  const text = textWrapper.textContent.trim();
-  const imageEl = imageWrapper.querySelector('img');
-
-  console.log('Text:', text);
-  console.log('Image element:', imageEl);
+  const textWrapper = textWrapperOuter?.querySelector('[data-aue-prop="text"]');
+  const imageEl = imageWrapperOuter?.querySelector('img');
 
   const blockquote = document.createElement('blockquote');
-  blockquote.innerHTML = text;
+  if (textWrapper) {
+    blockquote.innerHTML = textWrapper.innerHTML;
+  }
 
   const finalWrapper = document.createElement('div');
   finalWrapper.classList.add('image-text-inner');
@@ -26,10 +19,11 @@ export default function decorate(block) {
   if (imageEl) {
     const imgContainer = document.createElement('div');
     imgContainer.classList.add('image-text-image');
-    imgContainer.appendChild(imageEl);
+    imgContainer.appendChild(imageEl.cloneNode(true));
     finalWrapper.appendChild(imgContainer);
   }
 
   finalWrapper.appendChild(quoteContentWrapper);
-  block.replaceChildren(finalWrapper);
+  block.innerHTML = '';
+  block.appendChild(finalWrapper);
 }
