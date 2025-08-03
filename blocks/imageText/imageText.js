@@ -1,8 +1,17 @@
 export default function decorate(block) {
-  const [textWrapper, imageWrapper] = block.children;
+  console.log('Decorating imageText block:', block);
 
-  const text = textWrapper?.textContent.trim();
-  const imageEl = imageWrapper?.querySelector('img');
+  const [textWrapper, imageWrapper] = block.children;
+  if (!textWrapper || !imageWrapper) {
+    console.warn('imageText block: Missing expected child elements.');
+    return;
+  }
+
+  const text = textWrapper.textContent.trim();
+  const imageEl = imageWrapper.querySelector('img');
+
+  console.log('Text:', text);
+  console.log('Image element:', imageEl);
 
   const blockquote = document.createElement('blockquote');
   blockquote.innerHTML = text;

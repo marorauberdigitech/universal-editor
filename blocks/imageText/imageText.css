@@ -1,36 +1,20 @@
 .image-text-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 2rem;
-  flex-wrap: wrap;
   padding: 2rem;
-  background-color: #f5f5f5;
-  border-radius: 12px;
-}
-
-.image-text-content {
-  flex: 1 1 300px;
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.image-text-content blockquote {
-  margin: 0;
-  padding-left: 1rem;
-  border-left: 4px solid #ccc;
-  font-style: italic;
-  color: #555;
-}
-
-.image-text-image {
-  flex: 1 1 300px;
-  text-align: center;
+  background: #f9f9f9;
 }
 
 .image-text-image img {
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
+}
+
+.image-text-content blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  color: #333;
 }
