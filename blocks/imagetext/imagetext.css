@@ -1,10 +1,6 @@
 .image-text-inner {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .image-text-image img {
