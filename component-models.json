@@ -264,7 +264,7 @@
     ]
   },
   {
-    "id": "imageText",
+    "id": "imagetext",
     "fields": [
       {
         "component": "richtext",
