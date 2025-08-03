@@ -9,21 +9,23 @@ export default function decorate(block) {
     blockquote.innerHTML = textWrapper.innerHTML;
   }
 
-  const finalWrapper = document.createElement('div');
-  finalWrapper.classList.add('image-text-inner');
+  const innerWrapper = document.createElement('div');
+  innerWrapper.classList.add('image-text-inner');
 
-  const quoteContentWrapper = document.createElement('div');
-  quoteContentWrapper.classList.add('image-text-content');
-  quoteContentWrapper.appendChild(blockquote);
+  const imageContainer = document.createElement('div');
+  imageContainer.classList.add('image-text-image');
+
+  const contentContainer = document.createElement('div');
+  contentContainer.classList.add('image-text-content');
+  contentContainer.appendChild(blockquote);
 
   if (imageEl) {
-    const imgContainer = document.createElement('div');
-    imgContainer.classList.add('image-text-image');
-    imgContainer.appendChild(imageEl.cloneNode(true));
-    finalWrapper.appendChild(imgContainer);
+    imageContainer.appendChild(imageEl.cloneNode(true));
+    innerWrapper.appendChild(imageContainer);
   }
 
-  finalWrapper.appendChild(quoteContentWrapper);
+  innerWrapper.appendChild(contentContainer);
   block.innerHTML = '';
-  block.appendChild(finalWrapper);
+  block.appendChild(innerWrapper);
 }
+
