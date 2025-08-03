@@ -1,6 +1,10 @@
 .image-text-inner {
   display: flex;
   gap: 2rem;
+      border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #fff;
 }
 
 .image-text-image img {
