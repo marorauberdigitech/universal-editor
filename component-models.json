@@ -266,13 +266,6 @@
   {
     "id": "imagetext",
     "fields": [
-     {
-        "component": "richtext",
-        "name": "heading",
-        "value": "",
-        "label": "Heading",
-        "valueType": "string"
-      },
       
       {
         "component": "richtext",

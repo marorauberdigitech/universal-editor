@@ -185,7 +185,6 @@
                 "template": {
                   "name": "imagetext",
                   "model": "imagetext",
-                  "heading": "<h2>Heading</h2>",
                   "text": "<p>Think, McFly! Think!</p>",
                   "image": "/content/dam"
                 }
