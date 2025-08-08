@@ -307,8 +307,7 @@
         "valueType": "string"
       }
     ]
-  },
-   {
+  },{
   "id": "tabs",
   "fields": [
     {
@@ -324,10 +323,13 @@
           "label": "Tab Title"
         },
         {
-          "component": "textarea",
-          "valueType": "string",
-          "name": "content",
-          "label": "Tab Content"
+          "component": "container",
+          "name": "tabContent",
+          "label": "Tab Content",
+          "allowedComponents": [
+            "text",
+            "image"
+          ]
         }
       ]
     }
