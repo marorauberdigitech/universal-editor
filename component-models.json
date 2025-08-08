@@ -307,5 +307,22 @@
         "valueType": "string"
       }
     ]
-  }
+  },
+    {
+  "id": "tabs",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "tabTitles",
+      "label": "Tab Titles",
+      "multi": true
+    },
+    {
+      "component": "multiselect",
+      "name": "tabContents",
+      "label": "Tab Contents",
+      "multi": true
+    }
+  ]
+}
 ]

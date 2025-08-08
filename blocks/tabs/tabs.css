@@ -1,0 +1,39 @@
+.tabs {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.tabs-nav {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.tabs-nav button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+}
+
+.tabs-nav button.active {
+  background: #fff;
+  border-bottom: 2px solid #0071d0;
+  color: #0071d0;
+}
+
+.tabs-content {
+  padding: 1rem;
+}
+
+.tabs-content .tab-panel {
+  display: none;
+}
+
+.tabs-content .tab-panel.active {
+  display: block;
+}
