@@ -308,23 +308,30 @@
       }
     ]
   },
-    {
+   {
   "id": "tabs",
   "fields": [
     {
-      "component": "text",
-      "valueType": "string",
-      "name": "tabTitles",
-      "label": "Tab Titles",
-      "multi": true
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "tabContents",
-      "label": "Tab Contents",
-      "multi": true
+      "component": "group",
+      "name": "tabItems",
+      "label": "Tabs",
+      "multi": true,
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Tab Title"
+        },
+        {
+          "component": "textarea",
+          "valueType": "string",
+          "name": "content",
+          "label": "Tab Content"
+        }
+      ]
     }
   ]
 }
+
 ]
