@@ -312,13 +312,15 @@
   "id": "tabs",
   "fields": [
     {
-      "component": "multiselect",
+      "component": "text",
+      "valueType": "string",
       "name": "tabTitles",
       "label": "Tab Titles",
       "multi": true
     },
     {
-      "component": "multiselect",
+      "component": "text",
+      "valueType": "string",
       "name": "tabContents",
       "label": "Tab Contents",
       "multi": true
