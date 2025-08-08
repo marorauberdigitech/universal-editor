@@ -307,33 +307,24 @@
         "valueType": "string"
       }
     ]
-  },{
+  },
+      {
   "id": "tabs",
   "fields": [
     {
-      "component": "group",
-      "name": "tabItems",
-      "label": "Tabs",
-      "multi": true,
-      "fields": [
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "title",
-          "label": "Tab Title"
-        },
-        {
-          "component": "container",
-          "name": "tabContent",
-          "label": "Tab Content",
-          "allowedComponents": [
-            "text",
-            "image"
-          ]
-        }
-      ]
+      "component": "text",
+      "valueType": "string",
+      "name": "tabTitles",
+      "label": "Tab Titles",
+      "multi": true
+    },
+    {
+      "component": "text",
+      "valueType": "container",
+      "name": "tabContents",
+      "label": "Tab Contents",
+      "multi": true
     }
   ]
 }
-
 ]
